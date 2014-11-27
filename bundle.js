@@ -12,7 +12,10 @@ module.exports = App;
 },{"react/addons":3}],2:[function(require,module,exports){
 var React = require('react');
 var App = require('./components/app');
-React.render(React.createElement(App, null), document.body);
+
+document.addEventListener('DOMContentLoaded', function() {
+  React.render(React.createElement(App, null), document.body);
+});
 
 },{"./components/app":1,"react":164}],3:[function(require,module,exports){
 module.exports = require('./lib/ReactWithAddons');

@@ -1,3 +1,6 @@
 var React = require('react');
 var App = require('./components/app');
-React.render(<App/>, document.body);
+
+document.addEventListener('DOMContentLoaded', function() {
+  React.render(<App/>, document.body);
+});
